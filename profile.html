@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - CampusFix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="dashboard-nav">
+    <div class="logo">Campus<span>Fix</span></div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="report.html">Report</a>
+        <a href="complaints.html">Complaints</a>
+        <a href="campus-map.html">Map</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+</header>
+
+<main class="dashboard">
+
+    <div class="page-title">
+        <h1>My Profile</h1>
+        <p>Manage your CampusFix account.</p>
+    </div>
+
+    <div class="profile-card">
+
+        <div class="profile-avatar" id="profileAvatar">U</div>
+
+        <h2 id="profileName">User</h2>
+        <p id="profileEmail">user@example.com</p>
+
+        <div class="profile-info">
+
+            <div>
+                <span>Role</span>
+                <strong id="profileRole">Student</strong>
+            </div>
+
+            <div>
+                <span>Complaints Submitted</span>
+                <strong id="profileComplaints">0</strong>
+            </div>
+
+        </div>
+
+        <button onclick="logout()" class="btn secondary">
+            Logout
+        </button>
+
+    </div>
+
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

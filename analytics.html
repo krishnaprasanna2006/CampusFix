@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - CampusFix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="dashboard-nav">
+    <div class="logo">Campus<span>Fix</span></div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="report.html">Report</a>
+        <a href="complaints.html">Complaints</a>
+        <a href="campus-map.html">Map</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+</header>
+
+<main class="dashboard">
+
+    <div class="page-title">
+        <h1>Campus Analytics</h1>
+        <p>Understand campus issues and resolution performance.</p>
+    </div>
+
+    <div class="analytics-grid">
+
+        <div class="analytics-card">
+            <h3>Total Issues</h3>
+            <div class="big-number" id="analyticsTotal">0</div>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Resolution Rate</h3>
+            <div class="big-number" id="resolutionRate">0%</div>
+        </div>
+
+        <div class="analytics-card">
+            <h3>High Priority</h3>
+            <div class="big-number" id="highPriority">0</div>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Active Issues</h3>
+            <div class="big-number" id="activeIssues">0</div>
+        </div>
+
+    </div>
+
+    <div class="analytics-section">
+
+        <div class="dashboard-panel">
+            <h2>Issues by Category</h2>
+
+            <div id="categoryChart" class="bar-chart"></div>
+        </div>
+
+        <div class="dashboard-panel">
+            <h2>Status Distribution</h2>
+
+            <div id="statusChart" class="status-chart"></div>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/analytics.js"></script>
+</body>
+</html>

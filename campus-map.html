@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Map - CampusFix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="dashboard-nav">
+    <div class="logo">Campus<span>Fix</span></div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="report.html">Report</a>
+        <a href="complaints.html">Complaints</a>
+        <a href="campus-map.html">Map</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+</header>
+
+<main class="dashboard">
+
+    <div class="page-title">
+        <h1>Campus Map</h1>
+        <p>View reported issues by location.</p>
+    </div>
+
+    <div class="map-container">
+
+        <div class="campus-building building-a">
+            <strong>Block A</strong>
+            <small>Academic Block</small>
+        </div>
+
+        <div class="campus-building building-b">
+            <strong>Block B</strong>
+            <small>Computer Science</small>
+        </div>
+
+        <div class="campus-building library">
+            <strong>Library</strong>
+            <small>Central Library</small>
+        </div>
+
+        <div class="campus-building canteen">
+            <strong>Canteen</strong>
+            <small>Food Court</small>
+        </div>
+
+        <div class="campus-building hostel">
+            <strong>Hostel</strong>
+            <small>Student Hostel</small>
+        </div>
+
+        <div class="map-marker marker-1">⚠️</div>
+        <div class="map-marker marker-2">🔧</div>
+        <div class="map-marker marker-3">💧</div>
+
+    </div>
+
+    <div class="map-legend">
+        <span>⚠️ High Priority</span>
+        <span>🔧 Maintenance</span>
+        <span>💧 Water Issue</span>
+    </div>
+
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/map.js"></script>
+</body>
+</html>

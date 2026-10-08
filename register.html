@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - CampusFix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="auth-page">
+
+<div class="auth-container">
+
+    <div class="auth-brand">
+        <div class="logo">Campus<span>Fix</span></div>
+        <h1>Join CampusFix</h1>
+        <p>Help make your campus cleaner, safer and smarter.</p>
+    </div>
+
+    <div class="auth-card">
+        <h2>Create Account</h2>
+        <p class="auth-subtitle">Register your CampusFix account.</p>
+
+        <form id="registerForm">
+
+            <label>Full Name</label>
+            <input type="text" id="registerName" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" id="registerEmail" placeholder="Enter your email" required>
+
+            <label>Password</label>
+            <input type="password" id="registerPassword" placeholder="Create password" required>
+
+            <label>Role</label>
+            <select id="registerRole">
+                <option value="Student">Student</option>
+                <option value="Staff">Staff</option>
+            </select>
+
+            <button type="submit" class="btn primary full">Create Account</button>
+
+            <p id="registerMessage" class="form-message"></p>
+        </form>
+
+        <p class="auth-link">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+    </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

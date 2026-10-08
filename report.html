@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Issue - CampusFix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="dashboard-nav">
+    <div class="logo">Campus<span>Fix</span></div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="report.html">Report</a>
+        <a href="complaints.html">Complaints</a>
+        <a href="campus-map.html">Map</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+</header>
+
+<main class="dashboard">
+
+    <div class="page-title">
+        <h1>Report an Issue</h1>
+        <p>Tell us about a problem on campus.</p>
+    </div>
+
+    <div class="form-card">
+
+        <form id="reportForm">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Issue Title</label>
+                    <input
+                        type="text"
+                        id="issueTitle"
+                        placeholder="Example: Broken classroom fan"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="issueCategory" required>
+                        <option value="">Select category</option>
+                        <option>Electrical</option>
+                        <option>Infrastructure</option>
+                        <option>Cleanliness</option>
+                        <option>Water</option>
+                        <option>Internet</option>
+                        <option>Safety</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Location</label>
+                    <input
+                        type="text"
+                        id="issueLocation"
+                        placeholder="Example: Block A - Room 204"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>Priority</label>
+                    <select id="issuePriority">
+                        <option>Low</option>
+                        <option selected>Medium</option>
+                        <option>High</option>
+                        <option>Critical</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+                <textarea
+                    id="issueDescription"
+                    rows="6"
+                    placeholder="Describe the problem in detail..."
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Upload Image</label>
+                <input type="file" id="issueImage" accept="image/*">
+            </div>
+
+            <button type="submit" class="btn primary">
+                Submit Complaint
+            </button>
+
+            <p id="reportMessage" class="form-message"></p>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/report.js"></script>
+</body>
+</html>
